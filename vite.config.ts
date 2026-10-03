@@ -13,8 +13,10 @@ export default defineConfig({
     tailwindcss(),
     svgr(),
   ],
+  base: 'mis-builder',
   build: {
     assetsInlineLimit: 0,
     sourcemap: true,
+    outDir: 'docs'
   },
 });
